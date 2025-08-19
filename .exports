@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
 
-# Make vim the default editor.
-export EDITOR='vim';
+# Make nano th# Hide the "default interactive shell is now zsh" warning on macOS.
+export BASH_SILENCE_DEPRECATION_WARNING=1;
+
+# Personal PATH additions
+export PATH="/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$HOME/bin:$HOME/.local/bin:$PATH"default editor.
+export EDITOR='nano';
 
 # Enable persistent REPL history for `node`.
 export NODE_REPL_HISTORY=~/.node_history;
